@@ -20,6 +20,41 @@
         console.error('error');
         console.table(['apple', 'banana']);
 
+        // const name = 'takayanagi';
+        let name;
+        console.log(name)
+        name = 'takagi';
+        console.log(name);
+
+        // 算術演算子
+        console.log(6 + 9);
+        console.log(10 - 15);
+        console.log(10 / (5 + 3));
+        console.log(7 % 3);
+        console.log(3 ** 2);
+
+        let x = 1;
+        /*
+        x+1だけでは変数の値は変わらない
+        値を更新するときは必ず計算した結果を代入しなければならない（下記のような書き方）
+        */
+        x = x + 1;
+        console.log(x);
+        // x = x * 100　と同じ意味
+        x += 100;
+        console.log(x);
+        // x = x + 1　と同じ意味　インクリメント　-（マイナス）バージョンはデクリメント
+        x++;
+        console.log(x);
+
+        // 型を調べる
+        console.log(typeof x);
+        console.log(x + 'dent');
+
+        const person = `takayanagi`;
+        const point = 120;
+        // ${}内で計算することも可能
+        console.log(`こんにちは、${person}さん。点数は${point}です`);
     </script>
 </body>
 
