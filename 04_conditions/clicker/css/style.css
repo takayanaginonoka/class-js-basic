@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 16px;
+}
+
+#hp-display {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+#enemy-img.is-damage {
+    animation: damage .5s;
+}
+
+@keyframes damage {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(20px, 10px);
+    }
+
+    60% {
+        transform: translate(-20px, -10px);
+    }
+}
