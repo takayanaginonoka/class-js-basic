@@ -25,7 +25,7 @@ for (let i = 0; i < thumbImgs.length; i++) {
 prevBtn.addEventListener('click', () => {
     currentIndex--;
     if (currentIndex < 0) {
-        currentIndex = 3;
+        currentIndex = thumbImgs.length - 1;
     }
 
     for (let j = 0; j < thumbImgs.length; j++) {
@@ -41,7 +41,7 @@ prevBtn.addEventListener('click', () => {
 
 nextBtn.addEventListener('click', () => {
     currentIndex++;
-    if (currentIndex > 3) {
+    if (currentIndex > thumbImgs.length - 1) {
         currentIndex = 0;
     }
 
