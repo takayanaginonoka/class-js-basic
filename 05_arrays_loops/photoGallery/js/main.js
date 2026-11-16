@@ -6,7 +6,6 @@ const thumbImgs = document.querySelectorAll('.thumb-img');
 
 let currentIndex = 0;
 
-
 for (let i = 0; i < thumbImgs.length; i++) {
     thumbImgs[i].addEventListener('click', () => {
         currentIndex = i;
